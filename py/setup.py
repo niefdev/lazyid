@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name="lazyid",
-    version="1.0.0",
+    version="1.1.0",
     author="niefdev",
     author_email="niefdev@gmail.com",
     description="Minimal 14-character URL-safe unique ID generator based on millisecond timestamp and cryptographically secure random bits.",

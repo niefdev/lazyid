@@ -44,7 +44,12 @@ function lazyid($id = null) {
 
         $dt = new DateTime("@$seconds");
         $dt->setTimezone(new DateTimeZone(date_default_timezone_get()));
-        return $dt->format('Y-m-d H:i:s') . '.' . str_pad($milliseconds, 3, '0', STR_PAD_LEFT);
+        $dt = DateTime::createFromFormat(
+            'U.u',
+            sprintf('%d.%03d000', $seconds, $milliseconds)
+        );
+        $dt->setTimezone(new DateTimeZone(date_default_timezone_get()));
+        return $dt;
     };
 
     if ($id === null) {

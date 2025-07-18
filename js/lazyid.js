@@ -55,16 +55,7 @@
     function bitToTimestamp(bitString) {
         var ts = parseInt(bitString.substr(0, 42), 2);
         var date = new Date(ts);
-        var pad = function (n, w) {
-            return n.toString().padStart(w, '0');
-        };
-        return date.getFullYear() + '-' +
-            pad(date.getMonth() + 1, 2) + '-' +
-            pad(date.getDate(), 2) + ' ' +
-            pad(date.getHours(), 2) + ':' +
-            pad(date.getMinutes(), 2) + ':' +
-            pad(date.getSeconds(), 2) + '.' +
-            pad(ts % 1000, 3);
+        return date;
     }
 
     function lazyid(id) {

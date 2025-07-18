@@ -1,6 +1,6 @@
 {
   "name": "lazyid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Minimal 14-character URL-safe unique ID generator with timestamp-based structure.",
   "main": "lazyid.js",
   "exports": {

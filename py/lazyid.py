@@ -37,7 +37,7 @@ def _bit_to_timestamp(bit_string):
     seconds = ts_ms // 1000
     milliseconds = ts_ms % 1000
     dt = datetime.datetime.fromtimestamp(seconds)
-    return dt.strftime('%Y-%m-%d %H:%M:%S') + '.' + str(milliseconds).zfill(3)
+    return dt.replace(microsecond=milliseconds * 1000)
 
 def lazyid(id=None):
     if id is None:
