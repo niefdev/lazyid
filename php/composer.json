@@ -1,0 +1,25 @@
+{
+    "name": "niefdev/lazyid",
+    "description": "Minimal 14-character URL-safe unique ID generator with timestamp-based structure.",
+    "type": "library",
+    "keywords": ["id", "unique-id", "short-id", "uuid", "identifier", "base64", "timestamp", "url-safe", "lazyid", "niefdev"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "niefdev",
+            "email": "niefdev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "files": ["lazyid.php"]
+    },
+    "support": {
+        "issues": "https://github.com/niefdev/lazyid/issues",
+        "source": "https://github.com/niefdev/lazyid"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
